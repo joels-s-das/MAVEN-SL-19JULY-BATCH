@@ -11,6 +11,10 @@ public class myCalc {
         double mean = (a + b) / 2.0;  // ensure floating-point division
         return Math.pow(a - mean, 2) + Math.pow(b - mean, 2);
     }
+	double std(int a, int b) {
+        double variance = varce(a, b) / 2.0; // divide by n = 2
+        return Math.sqrt(variance); // square root of variance
+    }
 
 
 	public static void main(String[] args) {
@@ -23,6 +27,7 @@ public class myCalc {
 		System.out.println("  Rem  is "+ calc.rem(40, 20));
 		System.out.println("  average  is "+ calc.avg(40, 20));
 		System.out.println("  variance  is "+ calc.varce(40, 20));
+		System.out.println("Std = " + calc.std(40, 20));
 	}
 
 }
