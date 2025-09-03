@@ -13,7 +13,7 @@ pipeline
 		}
 		stage ('clean stage') {
 			steps{
-				bat 'mavem clean'
+				sh 'mavem clean'
 			}
 		}
 		stage ('Build stage') {
