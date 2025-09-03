@@ -10,7 +10,7 @@ pipeline
 			{
 				echo " welcome to jenkin pipeline"
 			}
-		)
+		}
 		stage ('clean stage') {
 			steps{
 				bat 'mavem clean'
