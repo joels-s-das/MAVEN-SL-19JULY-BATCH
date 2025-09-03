@@ -16,7 +16,17 @@ pipeline
 		{
 			steps
 			{
-				bat 'mvn clean'
+				//bat 'mvn clean'
+				script {
+					if (isUnix()) 
+					{
+						sh 'mvn clean'
+					} 
+					else 
+					{
+							bat 'mvn clean'
+					}
+        			}
 			}
 		}
 		stage ('Build Success')
