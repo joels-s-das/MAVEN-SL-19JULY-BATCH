@@ -5,20 +5,20 @@ pipeline
 		maven "MAVEN_HOME"
 	}
 	stages {
-		stage ('welcome stage'){
+		stage ('Welcome Stage'){
 			steps 
 			{
 				echo " welcome to jenkin pipeline"
 			}
 		}
-		stage ('clean stage') {
+		stage ('Clean Stage') {
 			steps{
-				sh 'mavem clean'
+				bat 'mvn clean'
 			}
 		}
-		stage ('Build stage') {
+		stage ('Build Success') {
 			steps {
-				echo 'buid ssuccessfull '
+				echo 'Buid Successfull '
 				}
 		}
 	}
