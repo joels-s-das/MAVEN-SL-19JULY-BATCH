@@ -29,6 +29,14 @@ pipeline
         			}
 			}
 		}
+		stage ('Build Stage')
+		{
+			steps
+			{
+				sh 'mvn package'
+			}
+			
+		}
 		stage ('Build Success')
 		{
 			steps 
