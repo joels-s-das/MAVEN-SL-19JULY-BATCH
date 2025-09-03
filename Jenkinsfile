@@ -21,4 +21,5 @@ pipeline
 				echo 'buid ssuccessfull '
 				}
 		}
+	}
 }
