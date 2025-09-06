@@ -27,7 +27,7 @@ public class myCalc {
 		System.out.println("  Rem  is "+ calc.rem(40, 20));
 		System.out.println("  average  is "+ calc.avg(40, 20));
 		System.out.println("  variance  is "+ calc.varce(40, 20));
-		System.out.println("Std = " + calc.std(40, 20));
+		System.out.println("Std = " + calc.std(40, 20))`;
 	}
 
 }
