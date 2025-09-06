@@ -33,7 +33,7 @@ pipeline
 		{
 			steps 
 			{
-				SH MVN "mvn test"
+				sh mvn 'mvn test'
 			}
 		}
 		stage ('Build Stage')
