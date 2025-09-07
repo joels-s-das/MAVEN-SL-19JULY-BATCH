@@ -15,6 +15,10 @@ public class myCalc {
         double variance = varce(a, b) / 2.0; // divide by n = 2
         return Math.sqrt(variance); // square root of variance
     }
+	public void branch() {
+		ystem.out.println("Hello from main branch ");
+		
+	}
 
 
 	public static void main(String[] args) {
@@ -28,6 +32,7 @@ public class myCalc {
 		System.out.println("  average  is "+ calc.avg(40, 20));
 		System.out.println("  variance  is "+ calc.varce(40, 20));
 		System.out.println("Std = " + calc.std(40, 20));
+		calc.branch();
 	}
 
 }
