@@ -21,9 +21,6 @@
 	</dependencies>
 
 
-
-
-
     <build>
         <finalName>sl-calc</finalName>
         <plugins>
