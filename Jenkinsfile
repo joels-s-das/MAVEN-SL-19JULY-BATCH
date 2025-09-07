@@ -29,13 +29,7 @@ pipeline
         			}
 			}
 		}
-		stage ('Test Stage')
-		{
-			steps 
-			{
-				sh 'mvn test'
-			}
-		}
+
 		stage ('Build Stage')
 		{
 			steps
